@@ -25,7 +25,7 @@ abstract class HealthInsurancePlan{
 
 
     // Don't worry about the below code and also the InsuranceBrand class
-	private InsuranceBrand offeredBy;
+/**	private InsuranceBrand offeredBy;
 
 	public InsuranceBrand getOfferedBy() {
 		return offeredBy;
@@ -33,6 +33,6 @@ abstract class HealthInsurancePlan{
 
 	public void setOfferedBy(InsuranceBrand offeredBy) {
 		this.offeredBy = offeredBy;
-	}
+	}*/
 
 }
