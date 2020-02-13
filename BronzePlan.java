@@ -1,4 +1,4 @@
-package com.semanticsquare.HMS;
+//package com.semanticsquare.HMS;
 
 public class BronzePlan extends HealthInsurancePlan{
 
@@ -10,6 +10,6 @@ public class BronzePlan extends HealthInsurancePlan{
 	}
 
 	public double computeMonthlyPremium (double salary, int age, boolean smoking){
-		return 0.05 * salary + getOfferedBy().computeMonthlyPremium(this, age, smoking);
+		return 0.05 * salary + getOfferedBy().TestcomputeMonthlyPremium(this, age, smoking);
 	}
 }

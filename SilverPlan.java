@@ -1,6 +1,6 @@
-package com.semanticsquare.HMS;
+//package com.semanticsquare.HMS;
 
-public class SilverPlan extends HealthInsurancePlan{
+public class SilverPlan extends HealthInsurancePlan implements InsuranceBrand{
 
 	public double setCoverage(double amount){
 		return amount = amount * 0.7;
@@ -10,7 +10,7 @@ public class SilverPlan extends HealthInsurancePlan{
 	}
 
 	public double computeMonthlyPremium (double salary, int age, boolean smoking){
-		return 0.06 * salary + getOfferedBy().computeMonthlyPremium(this, age, smoking);
+		return 0.06 * salary + getOfferedBy().TestcomputeMonthlyPremium(this, age, smoking);
 	}
 
 }

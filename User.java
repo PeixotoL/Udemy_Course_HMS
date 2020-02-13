@@ -1,4 +1,4 @@
-package com.semanticsquare.HMS;
+//package com.semanticsquare.HMS;
 
 public class User {
 
