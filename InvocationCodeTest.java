@@ -1,3 +1,5 @@
+package com.semanticsquare.HMS;
+
 public class InvocationCodeTest{
   public static void main (String[] args){
     User Staff = new User();

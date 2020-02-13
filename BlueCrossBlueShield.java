@@ -1,3 +1,5 @@
+package com.semanticsquare.HMS;
+
 public class BlueCrossBlueShield implements InsuranceBrand{
   private long id;
   private String name;
@@ -16,7 +18,7 @@ public class BlueCrossBlueShield implements InsuranceBrand{
 		this.name = name;
 	}
 
-  public double computeMonthlyPremium(HealthInsurancePlan insurancePlan, int age, boolean smoking){
+  public double computeMonthlyPremium (HealthInsurancePlan insurancePlan, int age, boolean smoking){
     if (insurancePlan instanceof PlatinumPlan){
       if (age > 55 && smoking == true){
         return 300;

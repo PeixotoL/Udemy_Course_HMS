@@ -1,7 +1,8 @@
 package com.semanticsquare.HMS;
 
-abstract class HealthInsurancePlan{
+abstract class HealthInsurancePlan implements InsuranceBrand{
   private double coverage;
+
 
 	public double getCoverage(){
 		return coverage;

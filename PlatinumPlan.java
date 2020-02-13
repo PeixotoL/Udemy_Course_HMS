@@ -1,7 +1,7 @@
 package com.semanticsquare.HMS;
 
 
-public class PlatinumPlan extends HealthInsurancePlan {
+public class PlatinumPlan extends HealthInsurancePlan implements InsuranceBrand{
 
 	public double setCoverage(double amount){
 		return amount = amount * 0.9;
@@ -10,7 +10,7 @@ public class PlatinumPlan extends HealthInsurancePlan {
 		return salary = salary - (salary * 0.08);
 	}
 
-	public double computeMonthlyPremium(double salary, int age, boolean smoking){
+	public double computeMonthlyPremium (double salary, int age, boolean smoking){
 		return 0.08 * salary + getOfferedBy().computeMonthlyPremium(this, age, smoking);
 	}
 

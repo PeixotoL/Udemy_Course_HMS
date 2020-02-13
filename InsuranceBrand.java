@@ -1,4 +1,5 @@
+package com.semanticsquare.HMS;
 
 public interface InsuranceBrand {
-	int computeMonthlyPremium();
+	double computeMonthlyPremium();
 }

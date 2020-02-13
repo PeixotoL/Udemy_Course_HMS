@@ -77,10 +77,10 @@ public class User {
   }
 
   public boolean getSmoking(){
-    return smokes;
+    return smoking;
   }
   public void setSmoking(boolean smoking){
-    this.smokes = smokes;
+    this.smoking = smoking;
   }
 
 
