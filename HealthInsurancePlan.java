@@ -1,7 +1,8 @@
-package com.semanticsquare.HMS;
+//package com.semanticsquare.HMS;
 
-abstract class HealthInsurancePlan{
-    private double coverage;
+public abstract class HealthInsurancePlan extends BlueCrossBlueShield implements InsuranceBrand {
+  private double coverage;
+
 
 	public double getCoverage(){
 		return coverage;
@@ -21,11 +22,11 @@ abstract class HealthInsurancePlan{
 		}
 
 	}
-	public abstract double computeMonthlyPremium(double salary);
+  public abstract double computeMonthlyPremium(double salary);
+	public abstract double computeMonthlyPremium(double salary, int age, boolean smoking);
 
 
-    // Don't worry about the below code and also the InsuranceBrand class
-/**	private InsuranceBrand offeredBy;
+	private InsuranceBrand offeredBy;
 
 	public InsuranceBrand getOfferedBy() {
 		return offeredBy;
@@ -33,6 +34,6 @@ abstract class HealthInsurancePlan{
 
 	public void setOfferedBy(InsuranceBrand offeredBy) {
 		this.offeredBy = offeredBy;
-	}*/
+	}
 
 }
